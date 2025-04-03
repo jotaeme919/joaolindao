@@ -4,9 +4,14 @@ import "fmt"
  
  	func main() {
 		// Slice
-		var number = []int{11, 22, 33, 44, 55}
- 		fmt.Println(number)
- 		number = append(number, 66, 77, 88)
- 		fmt.Println(number, len(number), cap(number))
+		var names = []string{"Almofadinha", "Farofinha", "Bugiu", "Caruzo", "Salsicha"}
+ 		fmt.Println(names)
+		rangeOne := names[:2]
+		fmt.Println(rangeOne)
+		rangeTwo := names[3:]
+		fmt.Println(rangeTwo)
+		rangeThree := names[2]
+		fmt.Println(rangeThree)
+ 		
  	}
 	
